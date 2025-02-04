@@ -175,6 +175,26 @@
   background-color: #ee82ee;
 }
 
+.startButton:hover,
+.startButton:focus {
+  outline: 4px dashed #ffd5ff;
+  background: #ee82ee;
+}
+
+.startButton > div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  transition: all 0.1s;
+}
+
+.startButton:hover div,
+.startButton:focus div {
+  transform: scale(2);
+  letter-spacing: 8px;
+}
+
 .restart {
   width: 350px;
   max-width: 80%;

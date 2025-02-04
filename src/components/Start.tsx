@@ -24,7 +24,7 @@ export const Start = ({ setUserName }: StartProps) => {
         ref={inputRef}
       />
       <button className="startButton" onClick={handleClick}>
-        Start
+        <div>Start</div>
       </button>
     </div>
   );
