@@ -1,6 +1,25 @@
+import type { Metadata, Viewport } from "next";
+import { Poppins } from "next/font/google";
 import React from "react";
-
 import "./index.css";
+
+const poppins = Poppins({
+  variable: "--font-poppins",
+  subsets: ["latin"],
+  weight: ["400", "700", "900"],
+});
+export const metadata: Metadata = {
+  title: "Quiz",
+  description: "My implementation of Who want be millionaire",
+};
+
+export const viewport: Viewport = {
+  themeColor: "#ee82ee",
+  width: "device-width",
+  initialScale: 1,
+  maximumScale: 1,
+  userScalable: false,
+};
 
 export default function RootLayout({
   children,
@@ -9,18 +28,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="pt">
-      <head>
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" />
-        <link
-          href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap"
-          rel="stylesheet"
-        />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <meta name="theme-color" content="#ee82ee" />
-        <title>Quiz App</title>
-      </head>
-      <body>
+      <body className={`${poppins.variable} antialiased`}>
         <div id="root">{children}</div>
       </body>
     </html>
