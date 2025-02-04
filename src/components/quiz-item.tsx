@@ -1,7 +1,7 @@
 "use client";
 import { Answer, Question } from "@/utils/data";
 import React from "react";
-import "./quizitem.css";
+import "./quiz-item.css";
 
 type QuizItemProps = {
   data: Question[];
