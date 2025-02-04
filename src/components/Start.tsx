@@ -19,7 +19,7 @@ export const Start = ({ setUserName }: StartProps) => {
     <div className="start">
       <input
         type="text"
-        placeholder="Type your username"
+        placeholder="Digita o seu nome"
         className="startInput"
         ref={inputRef}
       />
