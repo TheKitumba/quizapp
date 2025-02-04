@@ -127,7 +127,7 @@
   grid-column: 1/3;
   width: 100%;
   max-width: 360px;
-  height: 140px;
+  min-height: 140px;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -139,6 +139,11 @@
   margin: auto;
   padding: 0.5rem;
   gap: 1rem;
+}
+
+.errorMessage {
+  color: #ffd5ff;
+  text-align: center;
 }
 
 .startInput {
