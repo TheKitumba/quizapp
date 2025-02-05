@@ -5,7 +5,7 @@ import { Timer } from "@/components/timer";
 import { useMedia } from "@/hooks/use-media";
 import { questions } from "@/utils/data";
 import { moneyList } from "@/utils/money-list";
-import { Coins } from "@phosphor-icons/react";
+import { Coins } from "@phosphor-icons/react/dist/ssr";
 import React from "react";
 import "./app.css";
 
